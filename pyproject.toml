@@ -1,0 +1,3 @@
+# pyproject.toml
+[tool.dagster]
+module = "defs" # Detta är namnet på din Python-fil utan .py

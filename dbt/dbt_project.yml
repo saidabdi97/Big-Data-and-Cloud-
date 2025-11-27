@@ -1,0 +1,17 @@
+# job_ads_dbt/dbt_project.yml
+name: 'job_ads_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'job_ads_profile' # Detta måste matcha namnet i din profiles.yml
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # där dbt lagrar kompilerad SQL
+clean-targets:
+  - "target"
+  - "dbt_packages"

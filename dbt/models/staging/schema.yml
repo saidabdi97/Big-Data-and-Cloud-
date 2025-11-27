@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_job_ads
+    description: Staged job ads combined from all occupation fields
+    columns:
+      - name: job_id
+        description: Unique identifier from DLT
+        tests:
+          - unique
+          - not_null
+      - name: title
+        description: Job ad title/headline
+        tests:
+          - not_null

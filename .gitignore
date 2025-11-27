@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# DuckDB log files
+*.duckdb.wal
+
+# BUT KEEP the database file
+# data/job_ads_pipeline.duckdb
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/packages/
+dbt/manifest.json
+dbt/run_results.json
+
+# Dagster
+*dagster_home*/
+*.db
+*.log
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# tmp
+*.tmp

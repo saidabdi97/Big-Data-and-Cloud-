@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: job_ads_dataset
+    schema: job_ads_dataset
+    description: Raw job ads data from JobTech API via DLT
+    tables:
+      - name: job_ads_data
+        description: Job ads for data/IT roles
+      - name: job_ads_hr
+        description: Job ads for HR roles
+      - name: job_ads_ekonomi
+        description: Job ads for economics/finance roles
